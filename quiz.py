@@ -14,6 +14,7 @@ q1 = input("The NFL is comprised of how many teams? "
            "\nb. 32 "
            "\nc. 28 "
            "\nd. 40 \n")
+
 if q1.lower() == "b":
     print("Well done, that is correct.")
     points += 1
@@ -25,6 +26,7 @@ q2 = input("At Home Depot, what does ASM stand for? "
            "\nb. Assistant Specialist Manager "
            "\nc. Annual Stockholders Meeting "
            "\nd. Applications Sales Manager \n")
+
 if q2.lower() == "a":
     print("Well done, that is correct.")
     points += 1
@@ -36,6 +38,7 @@ q3 = input("Which Calculus course introduces the z variable? "
            "\nb. Calculus IV "
            "\nc. Calculus III "
            "\nd. Calculus I \n")
+
 if q3.lower() == "c":
     print("Well done, that is correct.")
     points += 1
@@ -47,6 +50,7 @@ q4 = input("What is the largest country in the world (in terms of land)? "
            "\nb. China "
            "\nc. India "
            "\nd. Russia \n")
+
 if q4.lower() == "d":
     print("Well done, that is correct.")
     points += 1
@@ -56,6 +60,7 @@ else:
 q5 = input("Are speed and velocity both vector quantities? "
            "\na. no "
            "\nb. yes \n")
+
 if q5.lower() == "a":
     print("Well done, that is correct.")
     points += 1
@@ -67,6 +72,7 @@ q6 = input("What is sin(30) equivalent to? "
            "\nb. square root of 2 / 2 "
            "\nc. 0 "
            "\nd. 1/2 \n")
+
 if q6.lower() == "d":
     print("Well done, that is correct.")
     points += 1
