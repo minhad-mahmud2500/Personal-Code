@@ -713,7 +713,7 @@ int main()
     }
 
     else if (category == 'N' || category == 'n')
-        puts("\nSorry to see that you will not be using my Federal Tax Bracket Determiner. :(\n");
+        puts("\nSorry to see that you will not be using my Federal Tax Bracket Determiner, tax amount owed and net income calculator. :(\n");
 
     else
         puts("\nInvalid value entered!");
