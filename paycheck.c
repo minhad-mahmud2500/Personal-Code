@@ -1,3 +1,12 @@
+/*
+Asks the user if they would like to use my biweekly paycheck calculator.
+If they answer yes, they will proceed to my biweekly paycheck calculator. Otherwise, the program will terminate.
+Calculates a biweekly paycheck.
+Asks for pertinent information such as pay rate, hours worked for the former and latter weeks.
+Calculates gross and net pay.
+Accounts for overtime and various taxes.
+*/
+
 #include <stdio.h>
 
 int main()
@@ -101,3 +110,28 @@ int main()
             break;
     }
 }
+
+/*
+Sample Output:
+Welcome to my Paycheck Calculator!
+
+Would you like to use my paycheck calculator? Yes(Y/y) or No(N/n)? Y
+
+Thank you for proceeding with using my paycheck calculator!
+
+**Disclaimer** Only enter numbers (integers/floating-point values).
+
+What is your pay rate? 22
+
+How many hours did you work in the first week of this pay period? 54
+
+How many PTO hours did you use in the first week of this pay period? 0
+
+How many hours did you work in the latter week of this pay period? 24
+
+How many PTO hours did you use in the latter week of this pay period? 16
+
+Your gross pay for this pay period is $2222.00
+
+Your net pay for this pay period is $1766.50
+*/
