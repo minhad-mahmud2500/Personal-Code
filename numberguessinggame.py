@@ -37,6 +37,7 @@ if response.lower() == "y":
         else:
             print('Invalid value - please enter a number only.')
 
+    print('Correct!')
     print('You guessed the correct number in', guesses, 'guesses.')
 
 elif response.lower() == "n":
@@ -54,27 +55,22 @@ Hello, Waffy.
 Would you like to partake in my number guessing game - Yes (Y/y) or No (N/n)? y
 Venture a guess for a number (that is an integer) that ranges from 0 to 2500 (both inclusive).
 Enter your guess here: 1250
+Too high! Try again!
+Enter another guess: 625
+Too high! Try again!
+Enter another guess: 313
 Too low! Try again!
-Enter another guess: 1875
-Too high! Try again!
-Enter another guess: 1563
+Enter another guess: 470
 Too low! Try again!
-Enter another guess: 1719
-Too high! Try again!
-Enter another guess: 1641
+Enter another guess: 548
 Too low! Try again!
-Enter another guess: 1680
+Enter another guess: 582
+Too high! Try again!
+Enter another guess: 565
+Too high! Try again!
+Enter another guess: 557
 Too low! Try again!
-Enter another guess: 1700
-Too high! Try again!
-Enter another guess: 1690
-Too low! Try again!
-Enter another guess: 1695
-Too high! Try again!
-Enter another guess: 1693
-Too high! Try again!
-Enter another guess: 1692
-Too high! Try again!
-Enter another guess: 1691
-You guessed the correct number in 12 guesses.
+Enter another guess: 561
+Correct!
+You guessed the correct number in 9 guesses.
 """
