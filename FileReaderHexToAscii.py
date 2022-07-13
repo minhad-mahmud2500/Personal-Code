@@ -1,5 +1,5 @@
 """
-Reads hundreds of DCW hexadecimal inputs from a text file and converts them to their ASCII equivalents.
+Reads hundreds of Device Control Word (DCW) hexadecimal inputs from a text file and converts them to their ASCII equivalents.
 Produces the output in both the console and a text file (creates a new one).
 """
 
