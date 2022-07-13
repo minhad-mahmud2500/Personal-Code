@@ -1,3 +1,11 @@
+/*
+Asks the user if they would like to use my cash flow generator.
+If the user answers Y/y, they will proceed to use my cash flow generator. Otherwise, the program will terminate.
+Asks the user over what time frame they would like to track their cash flow.
+Asks for pertinent information such as expenses across various categories and income (accounts for multiple sources if applicable).
+Based on the user's input of expenses and income, a net cash flow will be calculated and a corresponding message will be printed.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -77,3 +85,44 @@ int main()
 
     return 0;
 }
+
+/*
+Sample Output:
+Welcome to my Cash Flow Generator!
+
+Would you like to use my cash flow generator? Yes(Y/y) or No(N/n)? Y
+
+Please enter your name to get started: Waffy
+
+Hello, Waffy.
+
+Over what time frame would you like your expenses to be calculated? 1 week
+
+Expenses for: 1 week
+
+**Disclaimer** Please enter numbers (integers/floating-point values) only.
+
+How much did you pay in bills? (Power/phone/water/Internet/insurance/etc): 578.84
+
+How much did you spend on eating out? 140.00
+
+How much did you spend on gas? 32.66
+
+How much did you spend on going out? 0
+
+How much did you spend on groceries? 125.00
+
+How much did you spend on miscellaneous things? 100
+
+Total expenses: 976.50
+
+Income over: 1 week
+
+How much did you make from your main source of income? 700
+
+How much did you make from other sources of income? 100
+
+Total income: 800.00
+
+Your net cash flow is $-176.50. You need to do a better job with regards to saving and spending money. You are in the red!
+*/
