@@ -7,7 +7,7 @@ public class TimeConversion {
 		
 		Calendar localTime = Calendar.getInstance();
 		
-		int hour = localTime.get(Calendar.HOUR_OF_DAY); // .HOUR uses a 12-hour clock
+		int hour = localTime.get(Calendar.HOUR_OF_DAY); // .HOUR uses a 12-hour clock, .HOUR_OF_DAY uses a 24-hour clock
 		int minute = localTime.get(Calendar.MINUTE);
 		int second = localTime.get(Calendar.SECOND);
 		int month = localTime.get(Calendar.MONTH) + 1; // Calendar starts months from 0
@@ -24,7 +24,7 @@ public class TimeConversion {
 		
 		Calendar banglaTime = new GregorianCalendar(TimeZone.getTimeZone("Asia/Dhaka"));
 		banglaTime.setTimeInMillis(localTime.getTimeInMillis());
-		hour = banglaTime.get(Calendar.HOUR_OF_DAY); // .HOUR uses a 12-hour clock
+		hour = banglaTime.get(Calendar.HOUR_OF_DAY); // .HOUR uses a 12-hour clock, .HOUR_OF_DAY uses a 24-hour clock
 		minute = banglaTime.get(Calendar.MINUTE);
 		second = banglaTime.get(Calendar.SECOND);
 		month = banglaTime.get(Calendar.MONTH) + 1; // Calendar starts months from 0
