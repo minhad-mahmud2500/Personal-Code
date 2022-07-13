@@ -1,4 +1,12 @@
-print('Welcome to my Federal Tax Bracket Determiner!')
+"""
+Determines the user's federal tax bracket, how much they owe in federal taxes, and their net income.
+Asks the user if they want to proceed with using my federal tax bracket determiner, tax amount owed and net income calculator.
+If the user answers Y/y, they will proceed. If they answer otherwise, the script will terminate.
+Asks the user for pertinent information such as what year they are filing taxes, their tax status, and their gross income for the corresponding year.
+Based on these parameters, the following can be determined: the user's federal tax bracket, the amount of federal taxes owed, and net income.
+"""
+
+print('Welcome to my Federal Tax Bracket Determiner, Tax Amount Owed and Net Income Calculator!\n')
 
 response = input('Would you like to proceed with determining your tax bracket, the amount of taxes you owe, and '
                  + 'your net income? Yes(Y/y) or No(N/n)? ')
@@ -8,10 +16,10 @@ if response == 'Y' or response == 'y':
     year = int(input('\nWhich year are you filing taxes for - 2021 or 2022? '))
     if year == 2021:
         filingStatus = int(input('\nWhat is your filing status? 1 - Single Filer? 2 - Married, filing jointly? ' +
-                                 '3 - Married, filing separately? 4 - Head of Household? Please type 1, 2, 3, or 4. '))
+                                 '3 - Married, filing separately? 4 - Head of Household? Please type 1, 2, 3, or 4: '))
 
         if filingStatus == 1:
-            grossIncome = float(input('\nWhat was your gross income for 2020? Please enter a number only '
+            grossIncome = float(input('\nWhat was your gross income for 2020? Please enter a non-negative number only '
                                 + '(integer/floating-point value, no commas). '))
 
             if 0 <= grossIncome <= 9950:
@@ -91,9 +99,10 @@ if response == 'Y' or response == 'y':
 
             else:
                 print('\nInvalid input!')
+                quit()
 
         elif filingStatus == 2:
-            grossIncome = float(input('\nWhat was your gross income for 2020? Please enter a number only '
+            grossIncome = float(input('\nWhat was your gross income for 2020? Please enter a non-negative number only '
                                 + '(integer/floating-point value, no commas). '))
 
             if 0 <= grossIncome <= 19900:
@@ -173,9 +182,10 @@ if response == 'Y' or response == 'y':
 
             else:
                 print('\nInvalid input!')
+                quit()
 
         elif filingStatus == 3:
-            grossIncome = float(input('\nWhat was your gross income for 2020? Please enter a number only '
+            grossIncome = float(input('\nWhat was your gross income for 2020? Please enter a non-negative number only '
                                 + '(integer/floating-point value, no commas). '))
 
             if 0 <= grossIncome <= 9950:
@@ -255,9 +265,10 @@ if response == 'Y' or response == 'y':
 
             else:
                 print('\nInvalid input!')
+                quit()
 
         elif filingStatus == 4:
-            grossIncome = float(input('\nWhat was your gross income for 2020? Please enter a number only '
+            grossIncome = float(input('\nWhat was your gross income for 2020? Please enter a non-negative number only '
                                 + '(integer/floating-point value, no commas). '))
 
             if 0 <= grossIncome <= 14200:
@@ -337,15 +348,17 @@ if response == 'Y' or response == 'y':
 
             else:
                 print('\nInvalid input!')
+                quit()
 
         else:
             print('\nInvalid input!')
+            quit()
 
     elif year == 2022:
         filingStatus = int(input('\nWhat is your filing status? 1 - Single Filer? 2 - Married, filing jointly? ' +
-                                 '3 - Married, filing separately? 4 - Head of household? Please type 1, 2, 3, or 4. '))
+                                 '3 - Married, filing separately? 4 - Head of household? Please type 1, 2, 3, or 4: '))
         if filingStatus == 1:
-            grossIncome = float(input('\nWhat was your gross income for 2021? Please enter a number only '
+            grossIncome = float(input('\nWhat was your gross income for 2021? Please enter a non-negative number only '
                                 + '(integer/floating-point value, no commas). '))
 
             if 0 <= grossIncome <= 10275:
@@ -425,9 +438,10 @@ if response == 'Y' or response == 'y':
 
             else:
                 print('\nInvalid input!')
+                quit()
 
         elif filingStatus == 2:
-            grossIncome = float(input('\nWhat was your gross income for 2021? Please enter a number only '
+            grossIncome = float(input('\nWhat was your gross income for 2021? Please enter a non-negative number only '
                                 + '(integer/floating-point value, no commas). '))
 
             if 0 <= grossIncome <= 20550:
@@ -507,9 +521,10 @@ if response == 'Y' or response == 'y':
 
             else:
                 print('\nInvalid input!')
+                quit()
 
         elif filingStatus == 3:
-            grossIncome = float(input('\nWhat was your gross income for 2021? Please enter a number only '
+            grossIncome = float(input('\nWhat was your gross income for 2021? Please enter a non-negative number only '
                                 + '(integer/floating-point value, no commas). '))
 
             if 0 <= grossIncome <= 10275:
@@ -589,9 +604,10 @@ if response == 'Y' or response == 'y':
 
             else:
                 print('\nInvalid input!')
+                quit()
 
         elif filingStatus == 4:
-            grossIncome = float(input('\nWhat was your gross income for 2021? Please enter a number only '
+            grossIncome = float(input('\nWhat was your gross income for 2021? Please enter a non-negative number only '
                                 + '(integer/floating-point value, no commas). '))
 
             if 0 <= grossIncome <= 14650:
@@ -671,15 +687,39 @@ if response == 'Y' or response == 'y':
 
             else:
                 print('\nInvalid input!')
+                quit()
 
         else:
             print('\nInvalid input!')
+            quit()
 
     else:
         print('\nInvalid input!')
+        quit()
 
 elif response == 'N' or response == 'n':
     print('\nSorry to see that you will not be giving this a shot. :(')
+    quit()
 
 else:
     print('\nInvalid input!')
+    quit()
+
+"""
+Sample Output:
+Welcome to my Federal Tax Bracket Determiner, Tax Amount Owed and Net Income Calculator!
+
+Would you like to proceed with determining your tax bracket, the amount of taxes you owe, and your net income? Yes(Y/y) or No(N/n)? y
+
+Thanks for giving this a shot!
+
+Which year are you filing taxes for - 2021 or 2022? 2021
+
+What is your filing status? 1 - Single Filer? 2 - Married, filing jointly? 3 - Married, filing separately? 4 - Head of Household? Please type 1, 2, 3, or 4: 1
+
+What was your gross income for 2020? Please enter a non-negative number only (integer/floating-point value, no commas). 123456789.08
+
+You will be taxed $157,804.25 plus 37% of the amount over $523,600.
+Accordingly, you owe $45,643,084.21 in taxes.
+After taxes, your net income will be $77,813,704.87
+"""
