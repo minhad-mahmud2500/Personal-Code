@@ -1,3 +1,9 @@
+/*
+Asks the user what they would like converted.
+Has the capability of converting between various temperatures, currencies, masses, distances, and speeds.
+Once the user selects an option between converting a temperature, currency, mass, distance, or speed, another list will be presented asking the user for a more specific conversion.
+*/
+
 #include <stdio.h>
 
 int main()
@@ -271,3 +277,32 @@ int main()
 
     return 0;
 }
+
+/*
+Sample Output:
+Welcome to my variation of a unit converter!
+
+Here is a list of conversions to choose from:
+
+Temperature(T/t), Currency(C/c), Mass(M/m), Distance(D/d), Speed(S/s)
+
+Please enter the corresponding letter for what you want to convert: M
+
+Welcome to The Mass Converter!
+
+Here is a list of conversions to choose from:
+
+Enter 1 for ounces to pounds.
+
+Enter 2 for grams to pounds.
+
+Enter 3 for pounds to kilograms.
+
+Enter 4 for kilograms to pounds.
+
+Conversion desired: 3
+
+Please enter the amount of pounds you want converted to kilograms: 236.2
+
+236.20 pounds = 107.14 kilograms
+*/
