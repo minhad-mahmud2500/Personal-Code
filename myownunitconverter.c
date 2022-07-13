@@ -1,7 +1,7 @@
 /*
 Asks the user what they would like converted.
 Has the capability of converting between various temperatures, currencies, masses, distances, and speeds.
-Once the user selects an option between converting a temperature, currency, mass, distance, or speed, another list will be presented
+Once the user selects an option between converting a temperature, currency, mass, distance, or speed, another list will be presented,
 asking the user for a more specific conversion.
 */
 
