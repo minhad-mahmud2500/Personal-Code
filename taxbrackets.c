@@ -1,3 +1,12 @@
+/*
+Determines the user's federal tax bracket, how much they owe in federal taxes, and their net income.
+Asks the user if they would like to proceed with using my federal tax bracket determiner, tax amount owed and net income calculator.
+If the user answers Y/y, they will proceed. If they answer otherwise, the program will terminate.
+Asks the user for relevant information such as what year they are filing taxes for, their tax filing status, and their gross income for the corresponding year.
+Based upon these parameters, the following can be determined: the federal tax bracket the user is in, how much the user owes in federal taxes,
+and the user's net income.
+*/
+
 #include <stdio.h>
 
 int main()
@@ -9,8 +18,8 @@ int main()
     float taxAmount;
     float netIncome;
 
-    puts("Welcome to my Federal Tax Bracket Determiner!\n");
-    printf("Would you like to use my Federal Tax Bracket Determiner, tax amount owed and net income calculator? \nYes(Y/y) or No(N/n)? ");
+    puts("Welcome to my Federal Tax Bracket Determiner, Tax Amount Owed and Net Income Calculator!\n");
+    printf("Would you like to use my Federal Tax Bracket Determiner, Tax Amount Owed and Net Income Calculator? \nYes(Y/y) or No(N/n)? ");
     scanf("%c", &category);
 
     if (category == 'Y' || category == 'y')
@@ -21,7 +30,9 @@ int main()
 
         if (year == 2021)
         {
-            printf("\nWhat is your filing status? \nSingle Filer(1)? Married, filing jointly(2)? Married, filing separately(3)? Head of household(4)? \nPlease type 1, 2, 3, or 4. ");
+            printf("\nWhat is your filing status?");
+            printf("\nSingle Filer (1)? Married, filing jointly (2)? Married, filing separately (3)? Head of Household (4)?");
+            printf("\nPlease type 1, 2, 3, or 4: ");
             scanf("%d", &filingStatus);
 
             if (filingStatus == 1)
@@ -368,7 +379,9 @@ int main()
 
         else if (year == 2022)
         {
-            printf("\nWhat is your filing status? \nSingle Filer(1)? Married, filing jointly(2)? Married, filing separately(3)? Head of household(4)? \nPlease type 1, 2, 3, or 4. ");
+            printf("\nWhat is your filing status?");
+            printf("\nSingle Filer (1)? Married, filing jointly (2)? Married, filing separately (3)? Head of household (4)?");
+            printf("\nPlease type 1, 2, 3, or 4: ");
             scanf("%d", &filingStatus);
 
             if (filingStatus == 1)
@@ -713,7 +726,7 @@ int main()
     }
 
     else if (category == 'N' || category == 'n')
-        puts("\nSorry to see that you will not be using my Federal Tax Bracket Determiner, tax amount owed and net income calculator. :(\n");
+        puts("\nSorry to see that you will not be using my Federal Tax Bracket Determiner. :(\n");
 
     else
         puts("\nInvalid value entered!");
@@ -721,3 +734,27 @@ int main()
 
     return(0);
 }
+
+/*
+Sample Output:
+Welcome to my Federal Tax Bracket Determiner, Tax Amount Owed and Net Income Calculator!
+
+Would you like to use my Federal Tax Bracket Determiner, tax amount owed and net income calculator?
+Yes(Y/y) or No(N/n)? Y
+
+Thank you for proceeding with using my Federal Tax Bracket Determiner, tax amount owed and net income calculator!
+
+What year are you filing your taxes for - 2021 or 2022? 2022
+
+What is your filing status?
+Single Filer (1)? Married, filing jointly (2)? Married, filing separately (3)? Head of household (4)?
+Please type 1, 2, 3, or 4: 4
+
+What was your gross income for 2021? Please only enter a non-negative number (integers/floating-point values, no commas). 468975.21
+
+You will be taxed $47,836 plus 35% of the amount over $215,950.
+
+Accordingly, you owe $136394.83 in taxes.
+
+After taxes, your net income will be $332580.38
+*/
