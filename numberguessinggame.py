@@ -77,6 +77,4 @@ Enter another guess: 1692
 Too high! Try again!
 Enter another guess: 1691
 You guessed the correct number in 12 guesses.
-
-Process finished with exit code 0
 """
