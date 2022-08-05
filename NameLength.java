@@ -12,6 +12,8 @@ public class NameLength {
 		String name = scan.nextLine();
 		
 		System.out.println("Your name has a length of " + name.replace(" ", "").length() + " letters.");
+		
+		scan.close();
 	}
 }
 
